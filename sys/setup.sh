@@ -18,3 +18,13 @@ add-apt-repository \
 apt-get update
 
 apt-get install docker-ce
+
+mkdir -p /mnt/docker
+mkdir -p /mnt/docker/portainer
+mkdir -p /mnt/docker/traefik
+
+touch /mnt/docker/traefik/docker-compose.yml
+touch /mnt/docker/traefik/acme.json && chmod 600 /mnt/docker/traefik/acme.json
+touch /mnt/docker/traefik/traefik.toml
+
+cp traefik.docker-compose.yml /mnt/docker/traefik/docker-compose.yml
