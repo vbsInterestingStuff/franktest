@@ -9,3 +9,5 @@ RUN npm install
 COPY api.js /app/api.js
 
 EXPOSE 80
+
+CMD ["nodejs","/app/api.js"]
