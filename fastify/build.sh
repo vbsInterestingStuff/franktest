@@ -1,1 +1,1 @@
-docker build -t fastify-hello
+docker build -t fastify-hello .
